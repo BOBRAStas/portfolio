@@ -1,10 +1,8 @@
+// Nav mobile
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.nav');
 
-navToggle?.addEventListener('click', () => {
-  nav?.classList.toggle('open');
-});
-
+navToggle?.addEventListener('click', () => nav?.classList.toggle('open'));
 document.querySelectorAll('.nav a').forEach((link) => {
   link.addEventListener('click', () => nav?.classList.remove('open'));
 });
@@ -13,7 +11,7 @@ document.querySelectorAll('.nav a').forEach((link) => {
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav a');
 
-const observer = new IntersectionObserver((entries) => {
+const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const id = entry.target.getAttribute('id');
@@ -24,11 +22,9 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: '-40% 0px -55% 0px' });
 
-sections.forEach((section) => observer.observe(section));
+sections.forEach((s) => sectionObserver.observe(s));
 
 // Fade-in on scroll
-const fadeEls = document.querySelectorAll('.project-item, .competence-card, .info-card');
-
 const fadeObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -37,11 +33,43 @@ const fadeObserver = new IntersectionObserver((entries) => {
       fadeObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.08 });
 
-fadeEls.forEach((el) => {
+document.querySelectorAll('.project-item, .competence-card, .info-card').forEach((el) => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(20px)';
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   fadeObserver.observe(el);
+});
+
+// Lightbox
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCaption = document.getElementById('lightbox-caption');
+const lightboxClose = document.getElementById('lightbox-close');
+
+document.querySelectorAll('.project-gallery figure').forEach((fig) => {
+  fig.addEventListener('click', () => {
+    const img = fig.querySelector('img');
+    const caption = fig.querySelector('figcaption');
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = caption?.textContent || '';
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+  lightboxImg.src = '';
+}
+
+lightboxClose?.addEventListener('click', closeLightbox);
+lightbox?.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
 });
