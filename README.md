@@ -1,24 +1,31 @@
-# Portfolio NGOM
+# Portfolio — NGOM Edmond
 
-Site de portfolio personnel prêt à publier sur GitHub Pages.
+Portfolio personnel de **NGOM Edmond**, étudiant en BUT2 Génie Mécanique et Productique,
+spécialité **Simulation et Réalité Virtuelle**.
 
-## Contenu
+## Contenu du site
 
-- `index.html` : page principale du portfolio
-- `styles.css` : styles visuels et mise en page
-- `script.js` : menu responsive mobile
+- **Hero** : présentation nom, formation et spécialité
+- **À propos** : profil, outils maîtrisés et contact
+- **Compétences** : les 5 compétences BUT GMP (Spécifier, Développer, Visualiser, Réaliser, Exploiter)
+- **Projets** : 8 projets réels détaillés (CAO, robotique, FAO, MEF ANSYS, métrologie…)
+- **Contact** : lien mailto direct
 
-## Publication GitHub Pages
+## Fichiers
 
-1. Créez un repository sur GitHub.
-2. Poussez ces fichiers sur la branche `main`.
-3. Activez GitHub Pages dans les paramètres du repository.
-4. Choisissez la source `main` ou `gh-pages` et enregistrez.
+| Fichier | Rôle |
+|---|---|
+| `index.html` | Structure complète du site |
+| `styles.css` | Design dark moderne, responsive |
+| `script.js` | Menu mobile, active nav, fade-in au scroll |
 
-Le site sera alors disponible via `https://<votre-nom-utilisateur>.github.io/<nom-du-repository>/`.
+## Publier sur GitHub Pages
 
-## Personnalisation
+1. Créer un repository public sur GitHub
+2. Pousser ces fichiers sur la branche `main`
+3. Aller dans **Settings → Pages**, choisir `main / (root)`, enregistrer
+4. Site disponible sur `https://<username>.github.io/<repo>/`
 
-- Mettez à jour les sections `À propos`, `Projets`, `Compétences` et `Contact`.
-- Remplacez `contact@example.com` par votre adresse.
-- Ajoutez vos propres images et projets pour personnaliser le portfolio.
+## Contact
+
+ngomedmond04@gmail.com

@@ -3,80 +3,403 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | NGOM</title>
+  <title>Portfolio | NGOM Edmond — Génie Mécanique & Productique</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#home" class="logo">NGOM Portfolio</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+      <a href="#home" class="logo">NGOM<span>.</span></a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu">&#9776;</button>
       <nav class="nav" aria-label="Navigation principale">
         <a href="#about">À propos</a>
-        <a href="#projects">Projets</a>
-        <a href="#skills">Compétences</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
+
+    <!-- HERO -->
     <section id="home" class="hero">
+      <div class="hero-bg-grid"></div>
       <div class="container hero-content">
         <p class="eyebrow">Bonjour, je suis</p>
-        <h1>NGOM</h1>
-        <p class="lead">Développeur web passionné, je crée des sites modernes, réactifs et professionnels.</p>
+        <h1>NGOM <span class="highlight">Edmond</span></h1>
+        <p class="lead">
+          Étudiant en <strong>BUT2 Génie Mécanique et Productique</strong><br>
+          Spécialité : <em>Simulation et réalité virtuelle</em>
+        </p>
+        <div class="hero-tags">
+          <span>CAO 3D</span>
+          <span>Simulation MEF</span>
+          <span>Robotique industrielle</span>
+          <span>Usinage CN</span>
+          <span>ANSYS</span>
+          <span>3DEXPERIENCE</span>
+        </div>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
           <a href="#contact" class="btn btn-secondary">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">↓</div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="about" class="section container">
+      <div class="section-label">À propos</div>
+      <h2>Qui suis-je ?</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Je suis <strong>NGOM Edmond</strong>, étudiant en deuxième année de BUT Génie Mécanique
+            et Productique avec une spécialisation en <strong>Simulation et Réalité Virtuelle</strong>.
+          </p>
+          <p>
+            Mon parcours m'a permis de maîtriser les outils numériques utilisés dans les bureaux
+            d'études modernes : de la <strong>conception paramétrique</strong> sous 3DEXPERIENCE
+            à la <strong>simulation par éléments finis</strong> sous ANSYS, en passant par la
+            <strong>robotique industrielle</strong> et l'<strong>usinage à commandes numériques</strong>.
+          </p>
+          <p>
+            Mon objectif est de mettre ces compétences au service de projets industriels exigeants,
+            en alliant rigueur technique et créativité.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <span class="info-icon">🎓</span>
+            <div>
+              <strong>Formation</strong>
+              <p>BUT2 Génie Mécanique et Productique</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">⚙️</span>
+            <div>
+              <strong>Spécialité</strong>
+              <p>Simulation et réalité virtuelle</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">🛠️</span>
+            <div>
+              <strong>Outils principaux</strong>
+              <p>3DEXPERIENCE · ANSYS · RoboGuide · CATIA · Power Inspect</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">📧</span>
+            <div>
+              <strong>Contact</strong>
+              <p>ngomedmond04@gmail.com</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section container">
-      <h2>À propos de moi</h2>
-      <p>Je développe des sites web en utilisant HTML, CSS, JavaScript et des frameworks modernes. Mon objectif est de proposer des expériences utilisateur fluides, accessibles et visuellement attractives.</p>
-    </section>
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="section competences-section">
+      <div class="container">
+        <div class="section-label">Compétences</div>
+        <h2>Les 5 compétences BUT GMP</h2>
+        <div class="competences-grid">
 
-    <section id="projects" class="section container projects">
-      <h2>Projets récents</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Site vitrine</h3>
-          <p>Création d'un site web responsive pour présenter une entreprise ou un service.</p>
-        </article>
-        <article class="project-card">
-          <h3>Portfolio interactif</h3>
-          <p>Design d'un portfolio personnel avec animations et sections claires.</p>
-        </article>
-        <article class="project-card">
-          <h3>Application web</h3>
-          <p>Développement d'une application web avec une interface moderne et une navigation intuitive.</p>
-        </article>
+          <div class="competence-card">
+            <div class="comp-number">01</div>
+            <h3>Spécifier</h3>
+            <p>
+              Concevoir des pièces 3D en CAO à l'aide de la plateforme 3DEXPERIENCE.
+              Conception en contexte et conception paramétrique pour des modèles fiables
+              et évolutifs.
+            </p>
+            <div class="comp-tags">
+              <span>3DEXPERIENCE</span>
+              <span>CAO</span>
+              <span>Assemblage</span>
+              <span>CATIA</span>
+            </div>
+          </div>
+
+          <div class="competence-card">
+            <div class="comp-number">02</div>
+            <h3>Développer</h3>
+            <p>
+              Programmer l'usinage à commandes numériques via la FAO : définition du brut,
+              stratégies d'usinage, simulation de trajectoires et génération du programme CN
+              (G-code).
+            </p>
+            <div class="comp-tags">
+              <span>FAO</span>
+              <span>Fraiseuse CN</span>
+              <span>Tour CN</span>
+              <span>G-code</span>
+            </div>
+          </div>
+
+          <div class="competence-card">
+            <div class="comp-number">03</div>
+            <h3>Visualiser</h3>
+            <p>
+              Appliquer la méthode des éléments finis (MEF) sous ANSYS et 3DEXPERIENCE pour
+              simuler les contraintes, déformations et comportements mécaniques de pièces
+              soumises à des charges.
+            </p>
+            <div class="comp-tags">
+              <span>ANSYS</span>
+              <span>MEF</span>
+              <span>Von Mises</span>
+              <span>3DEXPERIENCE</span>
+            </div>
+          </div>
+
+          <div class="competence-card">
+            <div class="comp-number">04</div>
+            <h3>Réaliser</h3>
+            <p>
+              Programmer et simuler des robots industriels (FANUC, KUKA) sur RoboGuide.
+              Définition des repères, trajectoires, conditions et boucles pour automatiser
+              des opérations en milieu industriel.
+            </p>
+            <div class="comp-tags">
+              <span>RoboGuide</span>
+              <span>FANUC</span>
+              <span>KUKA</span>
+              <span>Robotique</span>
+            </div>
+          </div>
+
+          <div class="competence-card">
+            <div class="comp-number">05</div>
+            <h3>Exploiter</h3>
+            <p>
+              Métrologie tridimensionnelle avec Power Inspect : création de repères de mesure,
+              gammes de contrôle et mesure sur machine tridimensionnelle. Application des
+              formules des moindres carrés.
+            </p>
+            <div class="comp-tags">
+              <span>Métrologie</span>
+              <span>Power Inspect</span>
+              <span>MMT</span>
+              <span>Contrôle qualité</span>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <section id="skills" class="section container skills">
-      <h2>Compétences</h2>
-      <div class="skills-grid">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Responsive Design</span>
-        <span>Git / GitHub</span>
-        <span>UI / UX</span>
+    <!-- PROJETS -->
+    <section id="projets" class="section container">
+      <div class="section-label">Projets</div>
+      <h2>Projets réalisés</h2>
+
+      <div class="projects-list">
+
+        <!-- Projet 1 -->
+        <article class="project-item">
+          <div class="project-meta">
+            <span class="project-tag tag-specifier">Spécifier</span>
+            <span class="project-tag tag-cao">CAO</span>
+          </div>
+          <div class="project-body">
+            <h3>Conception CAO — Dégrilleur & Bielle</h3>
+            <p>
+              Modélisation 3D de pièces mécaniques sur 3DEXPERIENCE en utilisant la
+              <strong>conception en contexte</strong> (modélisation directement dans l'assemblage
+              pour garantir la cohérence et éviter les interférences) et la
+              <strong>conception paramétrique</strong> (définition par paramètres et relations,
+              mise à jour automatique lors des modifications).
+            </p>
+            <ul>
+              <li>Pièce n°1 : <strong>Dégrilleur</strong></li>
+              <li>Pièce n°2 : <strong>Bielle</strong></li>
+              <li>Outils : 3DEXPERIENCE · CATIA</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Projet 2 -->
+        <article class="project-item">
+          <div class="project-meta">
+            <span class="project-tag tag-specifier">Spécifier</span>
+            <span class="project-tag tag-robotique">Robotique</span>
+          </div>
+          <div class="project-body">
+            <h3>Robotique industrielle — Robots FANUC & KUKA</h3>
+            <p>
+              Programmation et simulation de robots industriels pour des tâches automatisées :
+              manipulation de pièces, positionnement précis et suivi de trajectoires. Définition
+              des repères, des outils et des trajectoires pour des mouvements sécurisés.
+            </p>
+            <ul>
+              <li>Robots utilisés : <strong>FANUC</strong> et <strong>KUKA</strong></li>
+              <li>Vérification des trajectoires et prévention des collisions</li>
+              <li>Programmation manuelle et hors-ligne</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Projet 3 -->
+        <article class="project-item">
+          <div class="project-meta">
+            <span class="project-tag tag-developper">Développer</span>
+            <span class="project-tag tag-fao">FAO / Usinage CN</span>
+          </div>
+          <div class="project-body">
+            <h3>Usinage CN — Boîte et couvercle</h3>
+            <p>
+              Fabrication assistée par ordinateur : transformation du modèle 3D CAO en trajectoires
+              d'usinage exploitables sur machine CN. Définition du brut, choix des outils de coupe,
+              stratégies d'ébauche et finition, simulation de l'usinage puis génération du G-code
+              via post-processeur.
+            </p>
+            <ul>
+              <li>Pièces : <strong>Boîte et couvercle</strong></li>
+              <li>Machines : Fraiseuse CN · Tour CN</li>
+              <li>Simulation d'usinage et vérification des passes</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Projet 4 -->
+        <article class="project-item">
+          <div class="project-meta">
+            <span class="project-tag tag-realiser">Réaliser</span>
+            <span class="project-tag tag-robotique">RoboGuide</span>
+          </div>
+          <div class="project-body">
+            <h3>Projet 3.03 — Simulation d'une chaîne de production de jouets</h3>
+            <p>
+              Simulation complète d'une chaîne de production automatisée sur <strong>RoboGuide</strong>
+              (logiciel FANUC). Programmation des instructions robot pour l'exécution précise des tâches :
+              définition des trajectoires, positions, séquences d'opérations, conditions et boucles
+              d'automatisation.
+            </p>
+            <ul>
+              <li>Logiciel : <strong>RoboGuide</strong> (FANUC)</li>
+              <li>Validation des mouvements avant exécution réelle</li>
+              <li>Objectif : éviter les erreurs coûteuses en production</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Projet 5 -->
+        <article class="project-item">
+          <div class="project-meta">
+            <span class="project-tag tag-visualiser">Visualiser</span>
+            <span class="project-tag tag-mef">MEF / ANSYS</span>
+          </div>
+          <div class="project-body">
+            <h3>Projet 3.01 — Simulation d'un sous-marin sous pression (ANSYS)</h3>
+            <p>
+              Dimensionnement de la coque d'un sous-marin sphérique en alliage de titane capable
+              d'atteindre <strong>6 000 m de profondeur</strong>. Démarche complète : calculs
+              analytiques (paroi mince puis épaisse), puis validation par simulation numérique MEF
+              sous ANSYS.
+            </p>
+            <ul>
+              <li>Calcul des contraintes radiales et ortho-radiales</li>
+              <li>Comparaison limite élastique / contrainte max (coeff. sécurité = 2)</li>
+              <li>Simulation ANSYS avec maillage raffiné et symétrie exploitée</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Projet 6 -->
+        <article class="project-item">
+          <div class="project-meta">
+            <span class="project-tag tag-visualiser">Visualiser</span>
+            <span class="project-tag tag-mef">MEF / ANSYS</span>
+          </div>
+          <div class="project-body">
+            <h3>Projet 3.02 — Simulation des couteaux de BAR (ANSYS)</h3>
+            <p>
+              Simulation par éléments finis des couteaux de BAR d'une voiture sous ANSYS.
+              Analyse des déplacements et des contraintes mécaniques afin de vérifier la
+              résistance des pièces aux forces appliquées.
+            </p>
+            <ul>
+              <li>Résultat : couteaux résistants à la force appliquée</li>
+              <li>Cohérence entre résultats numériques et calculs analytiques</li>
+              <li>Logiciel : <strong>ANSYS</strong></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Projet 7 -->
+        <article class="project-item">
+          <div class="project-meta">
+            <span class="project-tag tag-visualiser">Visualiser</span>
+            <span class="project-tag tag-mef">MEF / 3DExperience</span>
+          </div>
+          <div class="project-body">
+            <h3>Simulation MEF — Analyse d'un piston (3DEXPERIENCE)</h3>
+            <p>
+              Application de la méthode des éléments finis sur 3DEXPERIENCE pour analyser le
+              comportement mécanique d'un piston. Étude statique avec encastrements, application
+              des charges, maillage raffiné dans les zones critiques et analyse des contraintes de
+              <strong>Von Mises</strong>.
+            </p>
+            <ul>
+              <li>Import et vérification de la géométrie du piston</li>
+              <li>Définition des propriétés matériau, conditions aux limites et charges</li>
+              <li>Analyse des contraintes Von Mises et des déformations</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Projet 8 -->
+        <article class="project-item">
+          <div class="project-meta">
+            <span class="project-tag tag-exploiter">Exploiter</span>
+            <span class="project-tag tag-metro">Métrologie</span>
+          </div>
+          <div class="project-body">
+            <h3>Métrologie tridimensionnelle — Power Inspect</h3>
+            <p>
+              Acquisition des bases de la métrologie 3D : création de repères de mesure,
+              élaboration de gammes de contrôle sur <strong>Power Inspect</strong> et mesure
+              sur machine tridimensionnelle (MMT). Application des formules des moindres carrés
+              pour l'ajustement des surfaces.
+            </p>
+            <ul>
+              <li>Création de repères et gammes de mesure</li>
+              <li>Mesure sur machine tridimensionnelle (MMT)</li>
+              <li>Formules des moindres carrés appliquées</li>
+            </ul>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <section id="contact" class="section container contact">
-      <h2>Contact</h2>
-      <p>Envoyez-moi un message pour discuter de votre projet, de vos besoins ou pour collaborer ensemble.</p>
-      <a href="mailto:contact@example.com" class="btn btn-primary">Envoyer un email</a>
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-inner">
+        <div class="section-label">Contact</div>
+        <h2>Travaillons ensemble</h2>
+        <p class="lead">
+          Vous avez un projet, une proposition de stage ou simplement envie d'échanger ?
+          N'hésitez pas à me contacter.
+        </p>
+        <a href="mailto:ngomedmond04@gmail.com" class="btn btn-primary btn-large">
+          ✉ ngomedmond04@gmail.com
+        </a>
+      </div>
     </section>
+
   </main>
 
-  <footer class="site-footer container">
-    <p>© 2026 NGOM. Portfolio personnel.</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 NGOM Edmond — Portfolio BUT GMP · Simulation & Réalité Virtuelle</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
