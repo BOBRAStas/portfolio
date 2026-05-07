@@ -28,4 +28,5 @@ spécialité **Simulation Numérique et Réalité Virtuelle (SNRV)**.
 
 ## Contact
 
-ngomedmond04@gmail.com
+ngomedmond04@gmail.com                        https://bobrastas.github.io/porfolio/
+
