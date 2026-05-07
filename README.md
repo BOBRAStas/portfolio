@@ -1,7 +1,7 @@
 # Portfolio — NGOM Edmond
 
 Portfolio personnel de **NGOM Edmond**, étudiant en BUT2 Génie Mécanique et Productique,
-spécialité **Simulation et Réalité Virtuelle**.
+spécialité **Simulation Numérique et Réalité Virtuelle (SNRV)**.
 
 ## Contenu du site
 
