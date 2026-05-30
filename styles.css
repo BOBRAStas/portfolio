@@ -166,6 +166,40 @@ h1 {
   color: var(--accent);
 }
 
+.hero-tags .tag-alternance {
+  background: rgba(34, 197, 94, 0.15);
+  border-color: rgba(34, 197, 94, 0.4);
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #86efac;
+  font-size: 0.82rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  flex-shrink: 0;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5); }
+  50%       { box-shadow: 0 0 0 5px rgba(34, 197, 94, 0); }
+}
+
 .hero-actions {
   display: flex;
   gap: 1rem;
@@ -276,6 +310,16 @@ h1 {
 }
 
 .info-card:hover { border-color: var(--border); }
+
+.info-card--highlight {
+  border-color: rgba(79, 158, 255, 0.45);
+  background: rgba(79, 158, 255, 0.07);
+}
+
+.info-card--cta {
+  border-color: rgba(34, 197, 94, 0.45);
+  background: rgba(34, 197, 94, 0.07);
+}
 
 .info-icon { font-size: 1.4rem; flex-shrink: 0; }
 
@@ -450,6 +494,242 @@ h1 {
 }
 
 .project-body li strong { color: var(--text); }
+
+/* ===== UTC ===== */
+.utc-section {
+  background: var(--bg-2);
+  border-top: 1px solid var(--border-soft);
+}
+
+.utc-intro {
+  max-width: 680px;
+  color: var(--text-soft);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.utc-block {
+  margin-bottom: 3.5rem;
+}
+
+.utc-block-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--primary);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+/* Filières */
+.filieres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.filiere-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.filiere-card:hover {
+  border-color: var(--border);
+  transform: translateY(-2px);
+}
+
+.filiere-card--featured {
+  border-color: rgba(34, 197, 94, 0.45);
+  background: rgba(34, 197, 94, 0.06);
+}
+
+.filiere-card--featured:hover { border-color: rgba(34, 197, 94, 0.7); }
+
+.filiere-card--accent {
+  border-color: rgba(79, 158, 255, 0.4);
+  background: rgba(79, 158, 255, 0.06);
+}
+
+.filiere-card--accent:hover { border-color: rgba(79, 158, 255, 0.65); }
+
+.filiere-sigle {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.filiere-card--featured .filiere-sigle { color: #22c55e; }
+
+.filiere-body strong {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.filiere-body p {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.filiere-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* Enseignants */
+.enseignants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.enseignant-card {
+  display: flex;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  transition: border-color 0.2s;
+}
+
+.enseignant-card:hover { border-color: var(--border); }
+
+.enseignant-initials {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(79, 158, 255, 0.15);
+  border: 1px solid rgba(79, 158, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+}
+
+.enseignant-body { flex: 1; min-width: 0; }
+
+.enseignant-body strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+}
+
+.enseignant-role {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.4rem;
+}
+
+.enseignant-body p {
+  font-size: 0.83rem;
+  color: var(--text-soft);
+  line-height: 1.5;
+  margin: 0 0 0.5rem;
+}
+
+.enseignant-lab {
+  font-size: 0.72rem;
+  color: var(--text-soft);
+  opacity: 0.7;
+  font-style: italic;
+}
+
+/* Laboratoires */
+.labs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.lab-card {
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.lab-card:hover { border-color: var(--border); }
+
+.lab-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.lab-sigle {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.lab-ref {
+  font-size: 0.72rem;
+  color: var(--text-soft);
+  background: rgba(79, 158, 255, 0.1);
+  border: 1px solid rgba(79, 158, 255, 0.2);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+}
+
+.lab-card > p {
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.lab-equipes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.lab-equipes span {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(79, 158, 255, 0.08);
+  border: 1px solid rgba(79, 158, 255, 0.18);
+  color: var(--accent);
+}
 
 /* ===== CONTACT ===== */
 .contact-section {
