@@ -513,8 +513,10 @@ h1 {
 .utc-logo {
   height: 56px;
   width: auto;
-  opacity: 0.9;
-  filter: brightness(0) invert(1);
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  display: block;
 }
 
 .utc-intro {
