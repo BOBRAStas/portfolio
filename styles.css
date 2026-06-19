@@ -476,6 +476,29 @@ h1 {
 .tag-mef        { background: rgba(167, 139, 250, 0.1);  color: var(--purple); border: 1px solid rgba(167, 139, 250, 0.2); }
 .tag-metro      { background: rgba(45, 212, 191, 0.1);   color: var(--teal);   border: 1px solid rgba(45, 212, 191, 0.2); }
 
+/* ===== CODE COULEUR COMPÉTENCES GMP ===== */
+/* Chaque compétence et ses projets partagent une couleur identifiante */
+.comp--specifier, .proj--specifier { --comp-color: var(--accent);  --comp-rgb: 125, 211, 252; }
+.comp--developper, .proj--developper { --comp-color: var(--green);  --comp-rgb: 52, 211, 153; }
+.comp--visualiser, .proj--visualiser { --comp-color: var(--purple); --comp-rgb: 167, 139, 250; }
+.comp--realiser, .proj--realiser    { --comp-color: var(--orange); --comp-rgb: 251, 146, 60; }
+.comp--exploiter, .proj--exploiter  { --comp-color: var(--teal);   --comp-rgb: 45, 212, 191; }
+
+/* Carte compétence : barre supérieure et numéro colorés */
+.competence-card[class*="comp--"]::before {
+  background: var(--comp-color);
+  opacity: 0.85;
+}
+.competence-card[class*="comp--"] .comp-number { color: var(--comp-color); opacity: 0.28; }
+.competence-card[class*="comp--"]:hover { border-color: rgba(var(--comp-rgb), 0.5); }
+.competence-card[class*="comp--"]:hover::before { opacity: 1; }
+
+/* Projet : liseré gauche coloré selon la compétence */
+.project-item[class*="proj--"] {
+  border-left: 4px solid var(--comp-color);
+}
+.project-item[class*="proj--"]:hover { border-color: rgba(var(--comp-rgb), 0.45); }
+
 .project-body h3 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -510,8 +533,8 @@ h1 {
 .project-ressenti {
   margin-top: 1rem;
   padding: 0.85rem 1.1rem;
-  border-left: 3px solid var(--primary);
-  background: rgba(79, 158, 255, 0.05);
+  border-left: 3px solid var(--comp-color, var(--primary));
+  background: rgba(var(--comp-rgb, 79, 158, 255), 0.06);
   border-radius: 0 6px 6px 0;
 }
 
@@ -520,7 +543,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--primary);
+  color: var(--comp-color, var(--primary));
   margin: 0 0 0.4rem;
 }
 
