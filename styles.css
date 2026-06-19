@@ -490,6 +490,7 @@ h1 {
   opacity: 0.85;
 }
 .competence-card[class*="comp--"] .comp-number { color: var(--comp-color); opacity: 0.28; }
+.competence-card[class*="comp--"] h3 { color: var(--comp-color); }
 .competence-card[class*="comp--"]:hover { border-color: rgba(var(--comp-rgb), 0.5); }
 .competence-card[class*="comp--"]:hover::before { opacity: 1; }
 
